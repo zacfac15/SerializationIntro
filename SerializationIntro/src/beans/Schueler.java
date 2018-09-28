@@ -34,4 +34,12 @@ public class Schueler
     this.birthday = birthday;
   }
 
+  @Override
+  public String toString()
+  {
+    return "Schueler{" + "name=" + name + ", birthday=" + birthday + '}';
+  }
+  
+  
+
 }
