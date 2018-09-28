@@ -1,5 +1,10 @@
 package beans;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.LinkedList;
 import java.util.List;
 import javax.swing.AbstractListModel;
@@ -28,14 +33,14 @@ public class SchuelerModel extends AbstractListModel<Schueler>
     this.fireIntervalAdded(schueler, 0, list.size()-1);
   }
   
-  public void loadData()
+  public void loadData() throws FileNotFoundException
   {
-    
+    BufferedReader br = new BufferedReader(new FileReader(""));
   }
   
   public void saveData()
   {
-    
+    BufferedWriter wr = new BufferedWriter(new FileWriter(""));
   }
 
 }
