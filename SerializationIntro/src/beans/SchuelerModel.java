@@ -2,9 +2,11 @@ package beans;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 import javax.swing.AbstractListModel;
@@ -38,9 +40,10 @@ public class SchuelerModel extends AbstractListModel<Schueler>
     BufferedReader br = new BufferedReader(new FileReader(""));
   }
   
-  public void saveData()
+  public void saveData(File f) throws FileNotFoundException, IOException
   {
-    BufferedWriter wr = new BufferedWriter(new FileWriter(""));
+    BufferedWriter wr = new BufferedWriter(new FileWriter(f));
+    
   }
 
 }
